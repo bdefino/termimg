@@ -1,5 +1,5 @@
 # Copyright (C) 2018 Bailey Defino
-# <https://hiten2.github.io>
+# <https://bdefino.github.io>
 
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -181,7 +181,7 @@ def termimg(img, bg = False, colorize = True, intensify_light = False,
                 matrix[-1].append(_matrix[r][c])
         matrix.reverse()
         del _matrix
-    return NEWLINE.join((''.join(l) for l in matrix))
+    return NEWLINE.join(("".join(l) for l in matrix))
 
 if __name__ == "__main__" and len(sys.argv) > 1:
     for sig in (signal.SIGABRT, signal.SIGHUP, signal.SIGINT, signal.SIGQUIT,
